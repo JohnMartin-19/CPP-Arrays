@@ -9,7 +9,16 @@ void countdown(int n){
     }
 }
 
+int factorial(int k){
+    if(k > 0){
+       return k * factorial(k -1);
+    }else {
+        return 1;
+    }
+}
+
 int main(){
     countdown(10);
+    cout << "\nFactorial of 5 is " <<factorial(5);
     return 0;
 }
